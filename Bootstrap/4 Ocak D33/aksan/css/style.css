@@ -1,0 +1,94 @@
+/* reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: 'Merriweather', serif;
+}
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+div {
+    overflow: auto;
+}
+
+/* Hero-image */
+.hero-image {
+   background-image: linear-gradient(#020a20aa, #020a20aa), url(../img/hero.jpg); 
+   height: 35%;
+   background-repeat: no-repeat;
+   background-position: top;
+   background-size: 146%;
+   position: relative;
+}
+.navbar ul li {
+    font-size: 14px;
+    margin-inline: 10px;
+}
+.navbar-brand img {
+    width: 236px;
+}
+.hero-text {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    color: white;
+    transform: translate(-50%);
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+/* container */
+.linkler li {
+    margin: 10px 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+.linkler li:hover,
+.linkler li.active {
+    color: #990033;
+    cursor: pointer;
+}
+
+/* input - button */
+input {
+    border: none;
+    border-bottom: 1px solid rgba(127, 128, 128, 0.429);
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    transition: 0.6s;
+}
+input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+/* button */ 
+.button {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(127, 128, 128, 0.429);
+    padding: 5px 15px;
+    font-size: 12px;
+    transition: 0.6s;
+}
+.button:hover {
+    background-color: rgb(1, 1, 35);
+    color: white;
+}
+
+/* card */
+.card-text {
+    font-size: 12px;
+    letter-spacing: 1px;
+}

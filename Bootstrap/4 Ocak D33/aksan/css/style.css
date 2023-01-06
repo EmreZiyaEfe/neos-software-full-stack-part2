@@ -24,6 +24,7 @@ div {
    background-repeat: no-repeat;
    background-position: top;
    background-size: 146%;
+   overflow: hidden;
    position: relative;
 }
 .navbar ul li {
@@ -91,4 +92,16 @@ input:focus {
 .card-text {
     font-size: 12px;
     letter-spacing: 1px;
+}
+
+.col-md-4 {
+    transition: 0.5s;
+}
+
+@media screen and (max-width:992px) {
+    .navbar-nav {
+        background-color: rgb(32, 32, 32);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
 }

@@ -99,9 +99,9 @@ console.log("ortalama : " ,ortalama);
 // let isim = "Emre";
 // let soyisim = "efe";
 // let sonuc3 = soyisim - isim;
-// console.log(sonuc3);
+// console.log(sonuc3); //!hata
 
 let sayi1 = 20;
 let z = 10;
-let sonuc = 40 - sayi1 + z
+let sonuc = 40 - sayi1 + z;
 console.log(sayi1);

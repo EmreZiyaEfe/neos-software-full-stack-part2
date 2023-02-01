@@ -93,7 +93,7 @@
 // console.log(girilenYas+10)
 
 // let x = Number(prompt("Sayı girin:"));
-// kare = x * x
+// kare = x * x //? x**2 üssü x**3 
 // console.log(kare);
 
 // let x = Number(prompt("x: "));
@@ -104,6 +104,8 @@
 // mod= carpim % 2;
 // mod = mod + z;
 // console.log(mod);
+//let sonuc = ((x*y) %2) + z; //? 3 satırı tek satırda yazabiliyoruz
+//console.log(sonuc);
 
 let x = Number(prompt("x: "));
 let y = Number (prompt("y: "));

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <p class="birinci">Tıklama</p>
+    <p class="ikinci"> Çift Tıklama</p>
+    <p class="ucuncu">Hover</p>
+    <p class="dorduncu">Mouse Dışı</p>
+    <p class="besinci">İki taraflı Tıklama</p>
+    <P class="alti">İki taraflı tıklandık sonra bırakma</P>
+    <p class="yedi">DENEME</p>
+    <input type="text" class="myİnput">
+    
+
+    <script>
+
+      $(document).ready(function(){
+
+        $(".birinci").click(function(){ //tek tıklama
+            $(this).hide(); // hide gizleme
+        });
+        
+
+        $(".ikinci").dblclick(function(){ //çift tıklama
+            $(this).css("color","red"); // css kullanımı
+        });
+
+        $(".ucuncu").mouseenter(function(){//fare elementin üzerine geldiğinde 
+            console.log("hover olayı oldu!");
+        }); 
+
+        $(".dorduncu").mouseleave(function(){//FARE DIŞARI ÇIKTIĞINDA
+            console.log("mouse dışarı çıktı");
+        });
+
+        $(".besinci").mousedown(function(){//FARENİN İKİ TUŞUNDAN BİRİSNE TIKLANINCA 
+            alert("herhangi bir fare tuşuyla tıklandı!");
+        });
+
+        $(".alti").mouseup(function(){//farenin üzerine herhangi bir tuşla basılıp bırakıldıktan sonra olur
+            alert("tıklama bırakıldı");
+        });
+
+        $(".yedi").hover(function(){//bir başka hover olayı iki farklı function alabilir
+            console.log("hover oldu!");
+        },
+            function(){
+                console.log("hoverdan çıktın!");
+            }
+        );
+
+        $(".myİnput").focus(function(){//öğeye odaklandığında
+            $(this).css("background","red");
+        });
+
+        $(".myİnput").blur(function(){//öğreden odak kalktığında
+            $(this).css("background","white");
+        });
+
+
+
+
+      });
+    </script>
+</body>
+</html>

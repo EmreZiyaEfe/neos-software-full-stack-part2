@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .fadein{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            display: none;
+        }
+        .fadeout{
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+        }
+        .fadetoggle{
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+        }
+
+        .panel{
+            width: 350px;
+            height: 25px;
+            background-color: pink;
+            border-bottom: 1px solid red;
+            
+        }
+        .acilanpanel{
+            width: 350px;
+            height: 120px;
+            background-color: pink;
+            display: none;
+        }
+
+        .panel2{
+            width: 350px;
+            height: 25px;
+            background-color: pink;
+            border-bottom: 1px solid red;
+            
+        }
+        .acilanpanel2{
+            width: 350px;
+            height: 120px;
+            background-color: pink;
+        }
+
+        .panel3{
+            width: 350px;
+            height: 25px;
+            background-color: pink;
+            border-bottom: 1px solid red;
+            
+        }
+        .acilanpanel3{
+            width: 350px;
+            height: 120px;
+            background-color: pink;
+        }
+        .animasyon{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: red;
+        }
+     </style>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1>HİDE/SHOW</h1>
+    <p class="yazi">yazı gizle</p>
+    <button class="tıkla">Hide</button>
+
+    <p class="yazi2">yazı toggle</p>
+    <button class="tıkla2">Toggle</button>
+    <br><br><br>
+
+    <h1>FADEIN FADEOUT</h1>
+    <button class="tıkla3">Fadein</button>
+    <div class="fadein"></div>
+    <br><br>
+
+    <button class="tıkla4">Fadeout</button>
+    <div class="fadeout"></div>
+
+    <br><br>
+    <button class="tıkla5">FadeToggle</button>
+    <div class="fadetoggle"></div>
+    <br><br><br><br>
+
+    <h1>SLİDE</h1>
+    <div class="panel">Slide Down</div>
+    <div class="acilanpanel">Burada İçerik Yazıyor</div>
+    <br><br><br>
+
+    <div class="panel2">Slide Up</div>
+    <div class="acilanpanel2">Burada İçerik Yazıyor</div>
+    <br><br><br>
+
+    <div class="panel3">Slide toggle</div>
+    <div class="acilanpanel3">Burada İçerik Yazıyor</div>
+    <br><br><br><br>
+
+    <h1>ANİMATE</h1>
+    <button class="animate">Animate</button>
+    <div class="animasyon"></div>
+    
+
+
+
+
+
+
+    <script>
+        
+        $(document).ready(function(){
+            $(".tıkla").click(function(){
+                $(".yazi").hide(1000); //gizleme ve kaç saniyede olduğu
+            });
+
+            $(".tıkla2").click(function(){
+                $(".yazi2").toggle(2000); // gizleme ve açma aynı anda saniyeli
+            });
+
+            $(".tıkla3").click(function(){
+                $(".fadein").fadeIn();//soluk bir şekilde açılır
+            });
+
+            $(".tıkla4").click(function(){
+                $(".fadeout").fadeOut();/*Soluk bir şekilde gizlenir*/
+            });
+
+            $(".tıkla5").click(function(){
+                $(".fadetoggle").fadeToggle();
+            });
+
+            $(".panel").click(function(){
+                $(".acilanpanel").slideDown("slow");//slider şeklinde gizleyip açar
+            });
+
+            $(".panel2").click(function(){
+                $(".acilanpanel2").slideUp(".slow");
+            });
+
+            $(".panel3").click(function(){
+                $(".acilanpanel3").slideToggle("slow");
+            });
+
+            $(".animate").click(function(){
+                $(".animasyon").animate({left:"200px",width:"200px"})
+            });
+        });
+
+    </script>
+</body>
+</html>

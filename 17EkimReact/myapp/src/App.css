@@ -1,7 +1,47 @@
-h1 {
+/* h1 {
   color: red;
 }
 
 .test {
   color: blue;
+} */
+/* 
+header {
+  width: 100%;
+  height: 50px;
+  background-color: tomato;
+}
+
+.slider {
+  width: 100%;
+  height: 300px;
+  background-color: green;
+} */
+
+/* nav {
+  width: 100%;
+  height: 20px;
+} */
+
+/* .card {
+  width: 300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 2rem;
+  text-align: center;
+} */
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 20px;
+}
+
+.myCard {
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
 }

@@ -30,7 +30,7 @@ header {
   text-align: center;
 } */
 
-.container {
+/* .container {
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -44,4 +44,8 @@ header {
   padding: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   
+} */
+
+.parent {
+  display: flex;
 }

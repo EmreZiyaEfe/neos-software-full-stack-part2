@@ -2,13 +2,15 @@ import './App.css';
 // import Card from './Components/Card';
 // import Favoriler from './Components/Favoriler';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import GetirCard from './Components/GetirCard';
+import Test from './Components/Test';
+// import Slick from './Components/Slick';
+// import GetirCard from './Components/GetirCard';
 // import Urunbox from './Components/Urunbox';
 // import Header from './Components/Header';
 // import Slider from './Components/Slider';
 // import Contact from './Components/Contact';
-import Navbar from './Components/Navbar';
-import NavbarBoot from './Components/NavbarBoot';
+// import Navbar from './Components/Navbar';
+// import NavbarBoot from './Components/NavbarBoot';
 function App() {
 
   // let x = 20;
@@ -43,8 +45,11 @@ function App() {
 
       {/* <Favoriler /> */}
 
-      <NavbarBoot />
+      {/* <NavbarBoot /> */}
+
+      {/* <Slick /> */}
     
+    <Test />
     </div>
   );
 }

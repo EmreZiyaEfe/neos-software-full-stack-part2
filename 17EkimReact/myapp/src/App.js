@@ -3,6 +3,8 @@ import './App.css';
 // import Favoriler from './Components/Favoriler';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Test from './Components/Test';
+import UseState from './Components/UseState';
+import UseEffect from './Components/UseEffect';
 // import Slick from './Components/Slick';
 // import GetirCard from './Components/GetirCard';
 // import Urunbox from './Components/Urunbox';
@@ -49,7 +51,13 @@ function App() {
 
       {/* <Slick /> */}
     
-    <Test />
+    {/* <Test /> */}
+
+      {/* <UseState /> */}
+
+      <UseEffect />
+
+
     </div>
   );
 }
